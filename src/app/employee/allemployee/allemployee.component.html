@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-3">
+      <div class="employee-list">
+        <ul>
+          <li *ngFor="let d of emp" (click)="showDetails(d)">
+            <img src="{{d.ava}}" class="ava1">
+            <h3>{{d.name}}</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="col-9">
+      <div *ngIf="selectedEmp">
+        <img src="{{selectedEmp.ava}}" class="ava2">
+        <h2>{{ selectedEmp.name }}</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Birth</th>
+                <th>City</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>{{selectedEmp.lv}}</td>
+                <td>{{selectedEmp.birth}}</td>
+                <td>{{selectedEmp.city}}</td>
+                <td>{{selectedEmp.phone}}</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+</div>
+

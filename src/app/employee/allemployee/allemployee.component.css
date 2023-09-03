@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.employee-list {
+    max-height: 350px; 
+    width: 320px;
+    overflow-y: auto; 
+}
+h3{
+    margin-top: 10px;
+}
+.ava1{
+    border-radius: 100%;
+    width: 55px;
+    margin-right: 30px;
+}
+.ava2{
+    width: 100px;
+}
+li{
+    display: flex;
+    margin: 10px 0;
+}
+.col-9{
+    background-color: #00ffff70;
+    text-align: center;
+}
+.col-3{
+    background-color: #7fffd470;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+.employee-list ul {
+    list-style: none;
+    padding: 0;
+}  
+.employee-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+} 
+.employee-list li:hover {
+    background-color: #f0f0f0; 
+}
+@media (max-width: 1200px) {
+    .employee-list {
+      max-height: 450px; 
+      overflow-y: auto;
+    }
+  
+    .col-3, .col-9 {
+      width: 100%; /* Chuyển sang kiểu xếp chồng khi kích thước màn hình nhỏ hơn 1200px */
+    }
+  }

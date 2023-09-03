@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1380&t=st=1693540038~exp=1693540638~hmac=a2d30263ce9f7a5c1c087205c00f3a571a4a0c975d473c0e6232296f473e1f33);
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
